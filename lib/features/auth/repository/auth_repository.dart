@@ -1,5 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:surf_practice_chat_flutter/features/auth/exceptions/auth_exception.dart';
 import 'package:surf_practice_chat_flutter/features/auth/models/token_dto.dart';
+import 'package:surf_practice_chat_flutter/features/widgets/snac_bar.dart';
 import 'package:surf_study_jam/surf_study_jam.dart';
 
 /// Basic interface of authorization logic.
@@ -44,7 +46,7 @@ class AuthRepository implements IAuthRepository {
 
       return TokenDto(token: token);
     } on Exception catch (e) {
-      throw AuthException(e.toString());
+      return ShowMessages.showBar(message: 'Invalid login or password', duration: Duration(seconds: 3));
     }
   }
 
