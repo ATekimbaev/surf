@@ -8,6 +8,7 @@ class ChatMessageGeolocationDto extends ChatMessageDto {
   /// Location point.
   final ChatGeolocationDto location;
 
+  /// Constructor for [ChatMessageGeolocationDto].
   ChatMessageGeolocationDto({
     required ChatUserDto chatUserDto,
     required this.location,
@@ -19,7 +20,7 @@ class ChatMessageGeolocationDto extends ChatMessageDto {
           createdDateTime: createdDate,
         );
 
-
+  /// Named constructor for converting DTO from [StudyJamClient].
   ChatMessageGeolocationDto.fromSJClient({
     required SjMessageDto sjMessageDto,
     required SjUserDto sjUserDto,
