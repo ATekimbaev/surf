@@ -1,0 +1,31 @@
+name: surf_practice_chat_flutter
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  surf_study_jam: ^0.1.0
+  cupertino_icons: ^1.0.2
+  provider: ^6.0.3
+  flutter_bloc: ^8.0.1
+  shared_preferences: ^2.0.15
+  url_launcher: ^6.1.5
+  images: ^1.0.0
+  chat_bubbles: ^1.3.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.1
+flutter:
+
+  uses-material-design: true
